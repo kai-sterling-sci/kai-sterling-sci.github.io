@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>   
+ <title>Kai's Cool Website</title>
+<style>
+    body {
+        background: rgb(125, 198, 205);
+        color: rgb(45, 45, 45);
+        padding: 10px;
+        font-family: merriweather;
+    }
+    header {
+        font-size: 1.5em;
+        font-weight: italic;
+    }
+    #all-contents {
+        max-width: 800px;
+        margin: auto;
+    }
+
+    /* navigation menu */
+    nav {
+        background: blue;
+        margin: 0 auto;
+        display: flex;
+        padding: 10px;
+    }
+    nav header {
+        display: flex;
+        align-items: center;
+        color: rgb(255, 255, 255);
+        flex: 1;
+    }
+    nav ul {
+        list-style-image: none;
+    }
+    nav li {
+        display: inline-block;
+        padding: 0 10px;
+    }
+    nav a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    /* main container area beneath menu */
+    main {
+        background: rgb(245, 238, 219);
+        display: flex;
+    }
+    .sidebar {
+        margin-right: 25px;
+        padding: 10px;
+    }
+    .sidebar img {
+        width: 200px;
+    }
+    .content {
+        flex: 1;
+        padding: 15px;
+    }
+    .interests header {
+        font-size: 1.25em;
+    }
+</style>
+</head>
+<body>
+     <div id="all-contents"> 
+    
+        <nav>
+             <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+            </ul>
+        </nav>
+
+        <main>
+                <div class="sidebar">
+                  <img src ="data:image/jpeg;base64,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">
+                </div>
+            
+                <div class="content">
+                  <h1> KAI STERLING </h1>
+                    <p> Student at Abramson Sci Academy </p>
+                  <section class="interests">
+                     <header>INTERESTS</header>
+                         <ul>
+                            <li>- Love to watch netflix</li>
+                            <li>- Love hot wings</li>
+                            <li>- Love to sleep</li>
+                         </ul>
+                 </section>
+                </div>
+        </main>
+    </div>
+</body>
+</html>
